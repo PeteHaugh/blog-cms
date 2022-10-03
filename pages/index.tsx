@@ -32,13 +32,13 @@ export default function Home({ posts }: Props) {
             It's easy and free to post your thinking on any topic and connect
             wth millions of readers
           </h2>
-
-          <img
-            className="hidden md:inline-flex h-32 lg:h-full"
-            src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png"
-            alt=""
-          />
         </div>
+
+        <img
+          className="hidden md:inline-flex h-32 lg:h-full"
+          src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png"
+          alt=""
+        />
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6">
