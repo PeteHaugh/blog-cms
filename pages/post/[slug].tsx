@@ -41,8 +41,6 @@ function Post({ post }: Props) {
       });
   };
 
-  console.log(post.comments)
-
   return (
     <main>
       <Header />
@@ -176,19 +174,19 @@ function Post({ post }: Props) {
         )}
 
         <div className="flex flex-col p-10 my-10 max-w-2xl mx-auto shadow-yellow-50 shadow space-y-2">
-          <>
+          
             <h3 className="text-4xl">Comments</h3>
-            <hr className="pb-2"/>
+            <hr className="pb-2" />
 
-            {post.comments.map((comment) => {
+            {post.comments.map((comment) => (
               <div key={comment._id}>
                 <p>
                   <span className="text-yellow-500">{comment.name}: </span>
                   {comment.comment}
                 </p>
-              </div>;
-            })}
-          </>
+              </div>
+            ))}
+          
         </div>
       </article>
     </main>
