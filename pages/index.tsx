@@ -31,7 +31,7 @@ export default function Home({ posts }: Props) {
               <h2>Ideas and recipes from one cook to another</h2>
             </div>
             <img
-              className="hidden md:inline-flex  rounded-full object-cover h-72 w-72"
+              className="hidden md:inline-flex  rounded-full object-cover h-72 w-72 shadow-lg"
               src="https://i.ibb.co/RB1qWmp/Hero.jpg"
               alt=""
             />
