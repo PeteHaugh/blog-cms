@@ -41,6 +41,8 @@ function Post({ post }: Props) {
       });
   };
 
+  console.log(post.body)
+
   return (
     <main>
       <Header />
@@ -82,6 +84,9 @@ function Post({ post }: Props) {
               h2: (props: any) => {
                 <h2 className="text-xl font-bold my-5" {...props} />;
               },
+              ul: ({ children }: any) => {
+                <ul>{children}</ul>
+              },
               li: ({ children }: any) => {
                 <li className="ml-4 list-disc">{children}</li>;
               },
@@ -89,6 +94,9 @@ function Post({ post }: Props) {
                 <a href={href} className="text-2xl font-bold my-5">
                   {children}
                 </a>;
+              },
+              span: ({ children }: any) => {
+                <span>{children}</span>
               },
             }}
           />

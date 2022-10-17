@@ -21,22 +21,22 @@ export default function Home({ posts }: Props) {
       <Header />
 
       <div className="flex justify-between items-center border-y border-black bg-[url('https://i.ibb.co/FgTzPHh/Roast.webp')] bg-no-repeat bg-cover overflow-hidden  ">
-        <div className="bg-white bg-opacity-30 py-40 w-full">
-          <div className="flex flex-col px-10 space-y-5 bg-opacity-100">
-            <h1 className="text-6xl max-w-xl font-serif ">
-              <span className="underline decoration-black decoration-4">
-                The Greedy Ginger
-              </span>{" "}
-            </h1>
-            <h2>Ideas and recipes from one cook to another</h2>
-          </div>
+        <div className="flex flex-row justify-around  bg-white bg-opacity-30 py-20 w-full">
+            <div className="flex flex-col px-10 justify-center space-y-5 bg-opacity-100">
+              <h1 className="text-6xl max-w-xl font-serif ">
+                <span className="underline decoration-black decoration-4">
+                  The Greedy Ginger
+                </span>{" "}
+              </h1>
+              <h2>Ideas and recipes from one cook to another</h2>
+            </div>
+            <img
+              className="hidden md:inline-flex  rounded-full object-cover h-72 w-72"
+              src="https://i.ibb.co/RB1qWmp/Hero.jpg"
+              alt=""
+            />
+          
         </div>
-
-        {/* <img
-          className="hidden md:inline-flex h-32 lg:h-full"
-          src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png"
-          alt=""
-        /> */}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6">

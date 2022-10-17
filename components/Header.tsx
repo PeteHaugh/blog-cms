@@ -7,11 +7,12 @@ function Header() {
       <div className="flex items-center space-x-5">
         <Link href="/">
           <img
-            className="w-44 object-contain cursor-pointer"
-            src="https://links.papareact.com/yvf"
+            className="w-10 object-contain cursor-pointer"
+            src="https://i.ibb.co/M8Vt1Xv/cutlery.png"
             alt=""
           />
         </Link>
+
         <div className="hidden md:inline-flex items-center space-x-5">
           <h3>About</h3>
           <h3>Contact</h3>
